@@ -1,0 +1,36 @@
+.containerBtn {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.button {
+  display: block;
+  padding: 10px 15px;
+  font-size: 20px;
+  /* color: rgb(214, 124, 124); */
+  background-color: transparent;
+  border-radius: 5px;
+  border: 3px solid rgb(33, 32, 32);
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out 50ms;
+
+  &:hover {
+    background-color: rgb(140, 140, 253);
+    color: rgb(228, 215, 215);
+  }
+}
+
+.button.good {
+  color: rgb(0, 255, 0);
+  border-color: rgb(0, 255, 0);
+}
+
+.button.neutral {
+  color: rgb(255, 217, 0);
+  border-color: rgb(255, 217, 0);
+}
+
+.button.bad {
+  color: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+}
